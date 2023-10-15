@@ -22,3 +22,9 @@ Experiments on multiple benchmark time series datasets demonstrate the superiori
 ### UEA 30 archive time series datasets
 * [UEA 30 archive](http://www.timeseriesclassification.com/Downloads/Archives/Multivariate2018_arff.zip)
 
+## Usage (Our Model)
+To train a Scale-teaching model on a dataset, run
+
+```bash
+python scale_teaching.py --dataset [name of the dataset you want to train]  ...
+```
