@@ -421,9 +421,6 @@ def flip_label(dataset, target, ratio, args, pattern=0):
                 elif pattern == 1:
                     # Asymm
                     label[i] = np.random.choice([label[i], (target[i] + pattern) % n_class], p=[1 - ratio, ratio])
-                else:
-                    # Flip noise
-                    label[i] = np.random.choice([label[i], 0], p=[1 - ratio, ratio])
 
     elif type(pattern) is str:
         raise ValueError
