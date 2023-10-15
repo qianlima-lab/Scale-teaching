@@ -532,7 +532,7 @@ class Jensen_Shannon(nn.Module):
         return 0.5 * kl_divergence(p, m) + 0.5 * kl_divergence(q, m)
 
 
-def Calculate_scale_flow_jsd(val_loader, model_list, classifier_list, scale_list, num_class, num_samples, device):
+def calculate_scale_flow_jsd(val_loader, model_list, classifier_list, scale_list, num_class, num_samples, device):
     JS_dist = Jensen_Shannon()
     JSD = []
 
