@@ -13,7 +13,7 @@ from torch.utils.data import DataLoader
 
 from scare_utils import downsample_torch, build_dataset_pt, build_dataset_ucr, build_dataset_uea, build_model, \
     set_seed, shuffler, flip_label, adjust_learning_rate, TimeDataset, build_loss, \
-    construct_lp_graph, Calculate_scale_flow_jsd, get_clean_class_jsd_ind, get_clean_loss_ind, get_clean_class_loss_ind, evaluate_scale_flow_acc
+    construct_lp_graph, calculate_scale_flow_jsd, get_clean_class_jsd_ind, get_clean_loss_ind, get_clean_class_loss_ind, evaluate_scale_flow_acc
 
 if __name__ == '__main__':  ##
 
