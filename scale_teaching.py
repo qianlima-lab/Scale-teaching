@@ -314,7 +314,6 @@ if __name__ == '__main__':  ##
     train_time = time.time() - t
 
     print("Training end: test_acc = ", round(np.mean(test_end_five_accuracies), 4),
-          "traning time (seconds) = ",
-          round(train_time, 4), ", seed = ", args.random_seed)
+          "traning time (seconds) = ", round(train_time, 4))
 
     print('Done!')
