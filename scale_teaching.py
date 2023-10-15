@@ -33,11 +33,11 @@ if __name__ == '__main__':  ##
 
     # Label noise
     parser.add_argument('--label_noise_type', type=int, default=0,
-                        help='0 is Sym, 1 is Asym, 2 is Flip, -1 is Instance')
+                        help='0 is Sym, 1 is Asym, -1 is Instance')
     parser.add_argument('--label_noise_rate', type=float, default=0.5,
-                        help='label noise ratio, sym: 0.2, 0.5, 0.8, asym: 0.4')
+                        help='label noise ratio, sym: 0.2, 0.5, asym: 0.4, ins: 0.4')
     parser.add_argument('--warmup_epoch', type=int, default=30, help='30 or 50')
-    parser.add_argument('--small_loss_criterion', type=int, default=1, help='1 is use warm_up small loss, 0 is use jsd small loss.')
+    parser.add_argument('--small_loss_criterion', type=int, default=1, help='1 is use the warm_up small loss, 0 is use the jsd small loss.')
     parser.add_argument('--scale_nums', type=int, default=3, help='3, 4, 5, 6')
     parser.add_argument('--scale_list', type=list, default=[1, 2, 4], help='')
     parser.add_argument('--knn_num', type=int, default=10, help='')
