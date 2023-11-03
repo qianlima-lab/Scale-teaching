@@ -1,5 +1,5 @@
 # Scale-teaching: Robust Multi-scale Training for Time Series Classification with Noisy Labels
-This is the training code for our paper "Scale-teaching: Robust Multi-scale Training for Time Series Classification with Noisy Labels" (NeurIPS-23).
+This is the training code for our paper [*"Scale-teaching: Robust Multi-scale Training for Time Series Classification with Noisy Labels"*](https://openreview.net/forum?id=9D0fELXbrg) (NeurIPS-23).
 
 ## Abstract
 Deep Neural Networks (DNNs) have been criticized because they easily overfit noisy (incorrect) labels. 
@@ -27,4 +27,17 @@ To train a Scale-teaching model on a dataset, run
 
 ```bash
 python scale_teaching.py --dataset [name of the dataset you want to train]  ...
+```
+
+## Citation
+If you use this code for your research, please cite our paper:
+```
+@inproceedings{
+liu2023scaleteaching,
+title={Scale-teaching: Robust Multi-scale Training for Time Series Classification with Noisy Labels},
+author={Zhen Liu and Peitian Ma and Dongliang Chen and Wenbin Pei and Qianli Ma},
+booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+year={2023},
+url={https://openreview.net/forum?id=9D0fELXbrg}
+}
 ```
